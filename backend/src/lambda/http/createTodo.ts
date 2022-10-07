@@ -12,12 +12,12 @@ export const handler = middy(
     const authorization = event.headers.Authorization
     const split = authorization.split(' ')
     const jwtToken = split[1]
-    const todoItem = await createTodoItem(newTodo, jwtToken);
+    const item = await createTodoItem(newTodo, jwtToken);
 
     return {
       statusCode: 201,
       body: JSON.stringify({
-        todoItem
+        item
       })
     }
   })
