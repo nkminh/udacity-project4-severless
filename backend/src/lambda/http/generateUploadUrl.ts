@@ -3,7 +3,7 @@ import 'source-map-support/register'
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda'
 import * as middy from 'middy'
 import { cors, httpErrorHandler } from 'middy/middlewares'
-import { getUploadUrl } from '../../helpers/attachmentUtils'
+import { getUploadUrl } from '../../businessLogic/attachmentUtils'
 import { createLogger } from '../../utils/logger'
 const logger = createLogger('auth')
 
