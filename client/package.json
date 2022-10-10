@@ -29,6 +29,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-dev": "set BUILD_PATH=server/build&&npm run build",
+    "serve": "node server/app.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
