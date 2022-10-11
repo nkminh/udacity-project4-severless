@@ -6,7 +6,7 @@ metadata:
     app: udagram-frontend
 spec:
   ports:
-  - port: 8100
+  - port: 3000
     protocol: TCP
   selector:
     app: udagram-frontend
